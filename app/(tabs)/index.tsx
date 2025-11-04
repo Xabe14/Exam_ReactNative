@@ -21,6 +21,7 @@ import HomePage from '@/components/Lesson 7/HomePage';
 import HomePage2 from '@/components/Lesson 7/HomePage2';
 import StudentManager from '@/components/Lesson 9/Array';
 import Array2 from '@/components/Lesson 9/Array2';
+import Danhba from '@/components/KiemTra/Danhba';
 
 export default function HomeScreen() {
   return (
@@ -101,7 +102,7 @@ export default function HomeScreen() {
       {/* <HomePage/> */}
       {/* <Baitap1/> */}
       {/* <StudentManager /> */}
-      <Array2 />
+      <Danhba />
     </ParallaxScrollView>
   );
 }
