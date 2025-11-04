@@ -6,6 +6,21 @@ import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
+import HelloWorldScreen from '@/components/Lesson 1/HelloWordScreen';
+import ProfileScreen from '@/components/Lesson 1/ProfileScreen';
+import ProfileUseState from '@/components/Lesson 1/ProfileUseState.';
+import HomeWork from '@/components/Lesson 1/HomeWork';
+import Baitap1 from '@/components/Lesson 2/Baitap1';
+import Calculator3 from '@/components/Lesson 4/Calculate';
+import BMICalculator from '@/components/Lesson 5/BMICalculator';
+import BMI from '@/components/Lesson 6/BMI';
+import Layout from '@/components/Lesson 7/Layout';
+import GridLayout from '@/components/Lesson 7/GridLayout';
+import GridLayoutMap from '@/components/Lesson 7/GridLayoutMap';
+import HomePage from '@/components/Lesson 7/HomePage';
+import HomePage2 from '@/components/Lesson 7/HomePage2';
+import StudentManager from '@/components/Lesson 9/Array';
+import Array2 from '@/components/Lesson 9/Array2';
 
 export default function HomeScreen() {
   return (
@@ -13,11 +28,11 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          // source={require('@/assets/images/partial-react-logo.png')}
+          // style={styles.reactLogo}
         />
       }>
-      <ThemedView style={styles.titleContainer}>
+      {/* <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
@@ -73,7 +88,20 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
-      </ThemedView>
+      </ThemedView> */}
+      {/* <HelloWorldScreen /> */}
+      {/* <ProfileScreen name="Y Xa Bế" age={21} /> */}
+      {/* <ProfileUseState /> */}
+      {/* <HomeWork /> */}
+      {/* <Calculator3 /> */}
+      {/* <BMICalculator /> */}
+      {/* <BMI /> */}
+      {/* <Layout /> */}
+      {/* <GridLayout /> */}
+      {/* <HomePage/> */}
+      {/* <Baitap1/> */}
+      {/* <StudentManager /> */}
+      <Array2 />
     </ParallaxScrollView>
   );
 }
