@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -22,17 +22,18 @@ import HomePage2 from '@/components/Lesson 7/HomePage2';
 import StudentManager from '@/components/Lesson 9/Array';
 import Array2 from '@/components/Lesson 9/Array2';
 import Danhba from '@/components/KiemTra/Danhba';
+// import ProductSQLite from '@/components/Lesson 13/ProductSQLite';
+import HomeScreen from '@/components/Lesson 13/HomeScreen';
+// import DetailProduct from '@/components/Lesson 13/DetailProduct';
+// import AppNavigation3 from '@/components/Lesson 13/AppNavigation3';
+// import AppNavigator3 from '@/components/Lesson 13/AppNavigation3';
 
-export default function HomeScreen() {
+export default function index() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
-        <Image
-          // source={require('@/assets/images/partial-react-logo.png')}
-          // style={styles.reactLogo}
-        />
-      }>
+    <View
+      
+      style={{ flex: 1, backgroundColor: 'white' }}
+    >
       {/* <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Welcome!</ThemedText>
         <HelloWave />
@@ -102,8 +103,12 @@ export default function HomeScreen() {
       {/* <HomePage/> */}
       {/* <Baitap1/> */}
       {/* <StudentManager /> */}
-      <Danhba />
-    </ParallaxScrollView>
+      {/* <Danhba /> */}
+      {/* <ProductSQLite></ProductSQLite> */}
+      {/* <DetailProduct></DetailProduct> */}
+      {/* <AppNavigation3></AppNavigation3> */}
+      <HomeScreen></HomeScreen>
+    </View>
   );
 }
 
